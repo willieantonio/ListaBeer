@@ -16,4 +16,4 @@
 
 [ ] SQL.
 
-###Muita Vontade de  aprender e usar novas Tecnoilogias.
+###Muita Vontade de  aprender e usar novas Tecnologias.
