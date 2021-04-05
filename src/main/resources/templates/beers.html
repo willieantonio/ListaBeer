@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Listagem de Beers</title>
+    <style type="text/css">
+     body{margin-top: 50px;
+          color:blue;
+          background:antiquewhite;}
+     table{width:80%;}
+     th{color: black;
+        border: 1px solid black;
+        background: beige;
+        padding: 4px;}
+     td{border:1px solid black;
+        background:beige;}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>Lista de Beer</h1>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="beer: ${beers}">
+            <td th:text="${beer.id}"></td>
+            <td th:text="${beer.nome}"></td>
+            <td th:text="${beer.tipo}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
